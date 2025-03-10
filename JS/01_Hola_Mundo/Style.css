@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+
+nav{
+    background-color: antiquewhite;
+    padding: 7vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+a{
+    align-items: center;
+    flex-direction: row;
+}
