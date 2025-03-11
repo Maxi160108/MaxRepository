@@ -1,27 +1,53 @@
+//Numero
+
 function numero(){
-    alert(1)
+    alert(num)
 };
 
+let num = 7; 
+
+//Decimal
+
 function decimal(){
-    alert(1.5)
+    alert(dec)
 };
+
+let dec = 7.7;
+
+//Cadena de texto
 
 function texto(){
-    alert("Hola, soy un texto")
+    alert(cadtext)
 };
+
+let cadtext = "Esto es una cadena de texto";
+
+//booleano
 
 function booleano(){
-    alert(true)
+    alert(boolean)
 };
 
-function array(){
-    alert()
+let boolean = true;
+
+//Array
+
+function formacion(){
+    alert(array)
 };
 
-function objeto(){
-    alert()
+let array = [1, "hola", 25];
+
+//
+
+function mostrarIndefinido(){
+    alert(Indefinido)
 };
 
-function decimal(){
+let Indefinido = undefined;
+
+//
+
+function matriz(){
     alert()
 };
