@@ -6,4 +6,5 @@ button{
     border: none;
     border-radius: 1vh;
     margin-right: 5vh;
+    cursor: pointer;
 }
