@@ -34,7 +34,7 @@ function declararVariables() {
     let resta = num1 - num3;
     let multiplicar = num2 * num3;
     let dividir = num1 / 120;
-    alert("Resultados: \n suma: " + suma + "\n resta: " + resta "\n multiplicar: " + multiplicar "\n dividir: " + dividir);
+    alert("Resultados: \n suma: " + suma, + "\n resta: " + resta, "\n multiplicar: " + multiplicar, "\n dividir: " + dividir);
     
     // Tu código aquí
     }
@@ -43,6 +43,11 @@ function declararVariables() {
     // Instrucciones: Completa la función para construir un mensaje utilizando las variables 'direccion' y 'n_casa'.
     // Luego, muestra la longitud del mensaje y el antepenultimo en el mensaje. (.length)
     function manipularCadenas() {
- 
+        let direccion = prompt("Ingrese su direccion aqui: ")
+        let n_casa = prompt("Ingrese su numero de casa: ")
+        let mensaje = direccion + " " + n_casa
+        alert("la longitud de tu mensaje es: " + mensaje.length + "\n" + "El antepenultimo caracter es: " + mensaje[mensaje.length-3] + "\n" + "Vivo en: " +  mensaje) 
+
     // Tu código aquí
     }
+    
