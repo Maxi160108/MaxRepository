@@ -43,11 +43,13 @@ function declararVariables() {
     // Instrucciones: Completa la función para construir un mensaje utilizando las variables 'direccion' y 'n_casa'.
     // Luego, muestra la longitud del mensaje y el antepenultimo en el mensaje. (.length)
     function manipularCadenas() {
-        let direccion = prompt("Ingrese su direccion aqui: ")
-        let n_casa = prompt("Ingrese su numero de casa: ")
-        let mensaje = direccion + " " + n_casa
+        
         alert("la longitud de tu mensaje es: " + mensaje.length + "\n" + "El antepenultimo caracter es: " + mensaje[mensaje.length-3] + "\n" + "Vivo en: " +  mensaje) 
 
     // Tu código aquí
     }
+
+        let direccion = prompt("Ingrese su direccion aqui: ")
+        let n_casa = prompt("Ingrese su numero de casa: ")
+        let mensaje = direccion + " " + n_casa
     
