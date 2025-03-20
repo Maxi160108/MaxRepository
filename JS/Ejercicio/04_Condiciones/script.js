@@ -26,11 +26,11 @@ if (usuario == 'usuario123' && contraseña == 'secreto'){
 let numero = prompt('El numero que he elegido es: '); 
 
 if (numero > 0) {
-    console.log("El número es positivo");
+    alert("El número es positivo");
 } else if (numero < 0) {
-    console.log("El número es negativo");
+    alert("El número es negativo");
 } else {
-    console.log("El número es cero");
+    alert("El número es cero");
 }
 
 //Ejercicio N°4
@@ -38,9 +38,9 @@ if (numero > 0) {
 let puntuacion = prompt('Mi puntuacion es: ');
 
 if (puntuacion >= 90) {
-    console.log("Excelente");
+    alert("Excelente");
 } else if (puntuacion >= 70 && puntuacion < 90) {
-    console.log("Buen trabajo");
+    alert("Buen trabajo");
 } else {
-    console.log("Necesitas mejorar");
+    alert("Necesitas mejorar");
 }
