@@ -74,47 +74,5 @@ function sumarCincoNumPartDos(){
 
 //Ejercicio N°6
 
-function calculadora() {
-    // Obtener los valores ingresados
-    let numero1 = parseInt(prompt("Ingrese el primer numero "));
-    let numero2 = parseInt(prompt("Ingrese el segundo"));
-    let operacion = prompt("Ingrese su operacion deseada (Por ejemplo: si desea hacer una suma escriba suma)");
-    
-    // Pedir confirmación al usuario
-    let respuesta = prompt("¿Desea realizar esta operación? Escriba 'si' para continuar:");
-    
-    // Verificar la respuesta del usuario
-    if (respuesta !== "si") {
-        alert("Operación cancelada");
-        return; // Terminar si no confirmó
-    }
-    
-    // Comprobar que los valores son números válidos
-    if (isNaN(numero1) || isNaN(numero2)) {
-        alert("Error: Debe ingresar números válidos");
-        return;
-    }
-    
-    // Realizar la operación
-    if (operacion === "suma") {
-        resultado = numero1 + numero2;
-    } 
-    else if (operacion === "resta") {
-        resultado = numero1 - numero2;
-    } 
-    else if (operacion === "multiplicacion") {
-        resultado = numero1 * numero2;
-    } 
-    else if (operacion === "division") {
-        if (numero2 === 0) {
-            alert("Error: No se puede dividir por cero");
-            return;
-        }
-        resultado = numero1 / numero2;
-    }
-    
-    // Mostrar el resultado
-    alert(`El resultado de su operacion es: ${resultado}`)
-}
 
 //Ejercicio N°7
