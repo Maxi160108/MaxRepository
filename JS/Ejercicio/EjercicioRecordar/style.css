@@ -1,0 +1,58 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+section{
+    width: 105vh;
+    margin: 0 auto;
+}
+
+.top{
+    width: 95vh;
+    background-color: rgb(91, 91, 236);
+    margin: 5vh;
+}
+
+.gift{
+    width: 95vh;
+    margin: 5vh;
+    background-color: rgb(252, 85, 85);
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom{
+    width: 95vh;
+    margin: 5vh;
+    display: flex;
+}
+
+.item{
+    width: 25vh;
+    height: 25vh;
+    margin: 3vh;
+}
+
+/*libre*/
+
+#top{
+    width: 95vh;
+    background-color: aquamarine;
+    margin: 5vh;
+}
+
+#gift{
+    width: 95vh;
+    margin: 5vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+}
+
+#bottom{
+    background-color: pink;
+    width: 95vh;
+    margin: 5vh;
+    display: flex;
+}
