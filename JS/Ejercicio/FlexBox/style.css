@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: solid red 1px;
+}
+
+p, h1 {
+    font-family: "Ancizar Sans", sans-serif;
+}
+
+body{
+    background-color: rgb(253,246,237);
+}
+
+header{
+    background-color: rgb(52,73,94);
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fontFam{
+    color: white;
+    font-family: "Ancizar Sans", sans-serif;
+}
+
+.boxPrin{
+    background-color: rgb(230,126,34);
+    border-radius: 2vh;
+    height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    border-radius: 2vh;
+    padding: 4vh;
+    margin: 8vh;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+}
+
+.box{
+    background-color: rgb(212,84,0);
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vh;
+    width: 60vh;
+}
