@@ -1,18 +1,22 @@
-*{
+/* Elimina el  margen interno y externo por defecto de todos los elementos */
+* {
     padding: 0;
     margin: 0;
 }
 
+/* Aplica la fuente personalizada a todos los párrafos y títulos h1 */
 p, h1 {
     font-family: "Ancizar Sans", sans-serif;
 }
 
-body{
-    background-color: rgb(253,246,237);
+/* Estilo general del cuerpo: color de fondo cálido claro */
+body {
+    background-color: rgb(253, 246, 237);
 }
 
-header{
-    background-color: rgb(52,73,94);
+/* Encabezado de la página con Flexbox para centrar contenido en columna */
+header {
+    background-color: rgb(52, 73, 94); /* Azul oscuro */
     display: flex;
     flex-wrap: wrap;
     height: 20vh;
@@ -21,18 +25,19 @@ header{
     justify-content: center;
 }
 
-.fontFam{
+/* Clase para aplicar fuente y color blanco a textos */
+.fontFam {
     color: white;
     font-family: "Ancizar Sans", sans-serif;
 }
 
-.boxPrin{
-    background-color: rgb(230,126,34);
+/* Caja principal con fondo naranja, bordes redondeados y centrado del contenido */
+.boxPrin {
+    background-color: rgb(230, 126, 34); /* Naranja */
     border-radius: 2vh;
-    height: 25vh;
+    height: 20vh;
     display: flex;
     flex-wrap: wrap;
-    height: 20vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -40,7 +45,8 @@ header{
     margin-bottom: 4vh;
 }
 
-.container{
+/* Contenedor general de las secciones internas, con fondo blanco y padding */
+.container {
     display: flex;
     background-color: white;
     border-radius: 2vh;
@@ -49,16 +55,20 @@ header{
     flex-direction: column;
 }
 
-.row{
+/* Primera fila de contenido con Flexbox */
+.row {
     display: flex;
 }
-.rowTwo{
+
+/* Segunda fila, que contiene tres cajas, con separación entre ellas */
+.rowTwo {
     gap: 4vh;
     display: flex;
 }
 
-.box{
-    background-color: rgb(212,84,0);
+/* Estilo de cada caja informativa (en la segunda fila) */
+.box {
+    background-color: rgb(212, 84, 0); /* Naranja oscuro */
     display: flex;
     flex-wrap: wrap;
     height: 20vh;
@@ -69,6 +79,7 @@ header{
     width: 60vh;
 }
 
-.txt{
+/* Alineación del texto al centro en los párrafos */
+.txt {
     text-align: center;
 }
