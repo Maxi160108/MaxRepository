@@ -1,10 +1,11 @@
 function Suma_indices() {
-    let array = [1,2,3,4,5,6,7];
-    let suma = array[0] +array[1] +array[2] +array[3] +array[4] +array[5] +array[6];
-    alert('Los numeros son: ' + array + '\nEl resultado es: ' + suma);
+    let datos = [1,2,3,4,5,6,7];
+    let sumar = datos[0] + datos[1] + datos[2] + datos[3] + datos[4] + datos[5] + datos[6];
+    alert(`El arreglo es: ${datos.join(" - ")} \nResultado: ${sumar}`);
 }
 
-function pares() {
-    let arrelo = [2,4,6,7,10,12];
-    let producto = 
+function Producto_pares() {
+    let pares = [2,4,6,8,10,12];
+    let par = pares[0] * pares[1] * pares[2] * pares[3] * pares[4] * pares[5];
+    alert(`El arreglo es: ${pares.join(" - ")} \nResultado: ${par}` );
 }
