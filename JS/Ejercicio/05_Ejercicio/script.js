@@ -1,16 +1,3 @@
-Conversación abierta. 1 mensaje sin leer. 
-
-Ir al contenido
-Uso de Correo de Fundación Nacional del Comercio para la Educación con lectores de pantalla
-
-3 de 1.315
-(sin asunto)
-Recibidos
-
-MAX ALEXANDER DIAZ MOSQUERA <maxdiaz@liceovvh.cl>
-14:22 (hace 5 minutos)
-para mí
-
 function verificar() {
     let edad = parseInt(prompt("Ingresa tu edad"));
     let condiciones = prompt("Aceptas las condiciones");
