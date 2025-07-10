@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio HTML || JS</title>
+    <!--Enlace boostrap CC-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-bottom:10vh;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<main class="container" style="margin: 0 auto">
+    <div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°1</h5>
+  <div class="card-body">
+    <h5 class="card-title">Agregar elementos</h5>
+    <p class="card-text">Crea un arreglo vacío llamado compras.
+ Usa push() para agregar los siguientes elementos: "pan", "leche" y "huevos".
+ Muestra el arreglo resultante  en html.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioOne()">Ejecutar</a>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°2</h5>
+  <div class="card-body">
+    <h5 class="card-title">Quitar el último</h5>
+    <p class="card-text">A partir del arreglo anterior (compras), utiliza pop() para quitar el último producto.
+ Guarda el valor eliminado en una variable y muéstralo en HTML.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioTwo()">Ejecutar</a>
+  </div>
+  </div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°3</h5>
+  <div class="card-body">
+    <h5 class="card-title">Agregar al inicio</h5>
+    <p class="card-text">Crea un arreglo llamado colores = ["rojo", "azul"].
+ Usa unshift() para agregar "amarillo" al inicio.
+ Muestra el arreglo completo en el html.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioThree()">Ejecutar</a>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°4</h5>
+  <div class="card-body">
+    <h5 class="card-title">Quitar el primero</h5>
+    <p class="card-text">Usa el arreglo colores y elimina el primer elemento con shift().
+ Guarda el valor eliminado y muéstralo en HTML.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioFour()">Ejecutar</a>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°5</h5>
+  <div class="card-body">
+    <h5 class="card-title">Combinación de métodos</h5>
+    <p class="card-text">Crea un arreglo llamado numeros = [10, 20, 30].
+Agrega 40 al final.
+Quita el primer número.
+Agrega 5 al inicio.
+Elimina el último número.
+
+
+Muestra el arreglo final usando HMTL.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioFive()">Ejecutar</a>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°6</h5>
+  <div class="card-body">
+    <h5 class="card-title">Agregar elementos en orden inverso</h5>
+    <p class="card-text">Crea un arreglo vacío llamado orden.
+ Agrega los números 1, 2, 3 al inicio del arreglo (no al final).
+ Muestra el resultado final con HTML.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioSix()">Ejecutar</a>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°7</h5>
+  <div class="card-body">
+    <h5 class="card-title">Historial de mensajes</h5>
+    <p class="card-text">Crea un arreglo llamado historial = [].
+ Agrega al final 3 mensajes usando push(). Luego elimina el último mensaje enviado con pop() y muestra el mensaje eliminado en HTML.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioSeven()">Ejecutar</a>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°8</h5>
+  <div class="card-body">
+    <h5 class="card-title">Cola de atención</h5>
+    <p class="card-text">Crea un arreglo cola = ["Cliente1", "Cliente2", "Cliente3"].
+ Elimina al primer cliente usando shift().
+ Agrega "Cliente4" al final de la cola.
+ Muestra la cola final.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioEight()">Ejecutar</a>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°9</h5>
+  <div class="card-body">
+    <h5 class="card-title"> Reordenar nombres</h5>
+    <p class="card-text">Dado el arreglo nombres = ["Pedro", "Juan", "Luis"]:
+Quita el último nombre.
+Agrega "Mateo" al inicio.
+Agrega "Ana" al final.
+ Muestra el arreglo actualizado.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioNine()">Ejecutar</a>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°10</h5>
+  <div class="card-body">
+    <h5 class="card-title">Pilas y colas</h5>
+    <p class="card-text">Crea un arreglo vacío llamado pila.
+Simula una pila agregando 3 elementos con push().
+Luego quita 2 elementos con pop() y muéstralos.
+
+
+Crea otro arreglo vacío llamado colaNueva.
+Simula una cola agregando 3 elementos con push().
+Luego atiende (quita) 2 elementos con shift() y muéstralos en HTML.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioTen()">Ejecutar</a>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°11</h5>
+  <div class="card-body">
+    <h5 class="card-title">Completar la semana laboral</h5>
+    <p class="card-text">Tienes un arreglo incompleto de los días de la semana laboral. Agrega los días que faltan en el orden correcto para obtener la secuencia completa de lunes a viernes. Utiliza métodos de arreglo para lograrlo. Al finalizar, muestra el arreglo actualizado.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioEleven()">Ejecutar</a>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°12</h5>
+  <div class="card-body">
+    <h5 class="card-title">Registro de personas en una sala</h5>
+    <p class="card-text"> Se necesita modificar el registro de personas que están dentro de una sala:
+Algunas personas deben salir (del inicio y del final).
+
+
+Nuevas personas deben ingresar en las posiciones adecuadas.
+ Realiza los cambios necesarios para que el arreglo final coincida con el esperado. Al final, muestra el nuevo listado de personas.</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioTwelven()">Ejecutar</a>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom: 5vh;">
+  <h5 class="card-header">Ejercicio N°13</h5>
+  <div class="card-body">
+    <h5 class="card-title">Lista de tareas actualizada</h5>
+    <p class="card-text"> La lista de tareas ha cambiado. Se deben eliminar algunas tareas del final y reemplazarlas por otras nuevas que llegaron esta semana. Realiza las modificaciones necesarias para que la lista final coincida con el estado esperado. Muestra el resultado por consola o en un alert().</p>
+    <a href="#" class="btn btn-primary" onclick="ejercicioThirteen()">Ejecutar</a>
+  </div>
+</div>
+
+</main>
+
+<script src="script.js"></script>
+<!--Enlace de bosstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
