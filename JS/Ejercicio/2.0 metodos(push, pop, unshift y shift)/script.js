@@ -5,9 +5,11 @@ let orden = []
 let historial = []
 let cola = ["Cliente1", "Cliente2", "Cliente3"]
 let nombres = ["Pedro", "Juan", "Luis"]
-let dias = ["lunes", "miércoles", "jueves"];
-let personas = ["Carlos", "María", "Luis", "Ana", "Sofía"];
-let tareas = ["comer", "estudiar", "dormir", "jugar", "ver TV", "navegar"];
+let dias = ["lunes", "miércoles", "jueves"]
+let personas = ["Carlos", "María", "Luis", "Ana", "Sofía"]
+let tareas = ["comer", "estudiar", "dormir", "jugar", "ver TV", "navegar"]
+let pila = []
+let colaNueva = []
 
 function ejercicioOne(){
     alert(`Su historial de compras anterior es: ${compras}`)
@@ -71,7 +73,20 @@ function ejercicioNine(){
 }
 
 function ejercicioTen(){
-
+pila.push("|")
+pila.push("|")
+pila.push("|")
+alert(`La bateria antes era: ${pila}`)
+pila.pop()
+pila.pop()
+alert(`La bateria actual es: ${pila}`)
+colaNueva.push("Cliente N°1")
+colaNueva.push("Cliente N°2")
+colaNueva.push("Cliente N°3")
+alert(`Nuestra cola de clientes es: ${colaNueva}`)
+colaNueva.shift()
+colaNueva.shift()
+alert(`Nuestra cola de clientes ya atendida es: ${colaNueva}`)
 }
 
 function ejercicioEleven(){
