@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    margin: 0 auto;
+    width: 120vh;
+    justify-content: center;
+}
+
+.target{
+    display: flex;
+    flex-direction: column;
+    border:solid;
+}
+.arriba{
+    display: flex;
+    flex-direction: row;
+    padding: 2vh;
+    justify-content: center;
+}
+.abajo{
+    display: flex;
+    padding: 2vh;
+}
+.arribaIz{
+    justify-content: start;
+}
+.arribaDer{
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row;
+    gap: 4vh;
+}
+.likeButton{
+    width: 9vh;
+    height: 6vh;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0.7vh 0.7vh 1vh ;
+}
+.info{
+    font-size: 2.5vh;
+}
