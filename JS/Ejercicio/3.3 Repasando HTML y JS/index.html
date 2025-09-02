@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Actividad DOM</title>
+  <link rel="stylesheet" href="static/css/styles.css"/>
+</head>
+<body>
+  <h1>Ejercicio 1: Registro de Estudiante</h1>
+
+  <!-- Formulario -->
+  <form id="formEstudiante">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required minlength="2"/>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" min="14" max="100" required/>
+
+    <label for="curso">Curso:</label>
+    <select id="curso" required>
+      <option value="">Seleccione...</option>
+      <option value="3° Medio">3° Medio</option>
+      <option value="4° Medio">4° Medio</option>
+    </select>
+
+    <fieldset>
+      <legend>Jornada:</legend>
+      <label><input type="radio" name="jornada" value="Mañana" required/> Mañana</label>
+      <label><input type="radio" name="jornada" value="Tarde" required/> Tarde</label>
+    </fieldset>
+
+    <label>
+      <input type="checkbox" id="reglamento" required/> Acepto el reglamento
+    </label>
+
+    <button type="submit">Registrar</button>
+    <button type="reset" id="btnLimpiar">Limpiar</button>
+  </form>
+
+  <!-- Aquí aparecerán los mensajes -->
+  <p id="resultadoEstudiante" class="resultado" aria-live="polite"></p>
+  <p id="errorEstudiante" class="error" aria-live="polite"></p>
+
+  <!-- Resumen acumulado -->
+  <div id="resumenEstudiantes">
+    <h3>Resumen de Estudiantes Registrados</h3>
+    <ul id="listaEstudiantes"></ul>
+  </div>
+
+  <!-- EJERCICIO 2 -->
+  <section>
+    <h2>Ejercicio 2: Calculadora de Promedio de Notas</h2>
+    <form id="formNotas">
+      <label for="nota">Ingrese nota (1.0 - 7.0):</label>
+      <input type="number" id="nota" step="0.1" min="1" max="7">
+      <button type="button" id="btnAgregarNota">Agregar Nota</button>
+      <button type="button" id="btnCalcularPromedio">Calcular Promedio</button>
+      <button type="button" id="btnLimpiarNotas">Limpiar Notas</button>
+    </form>
+    <p class="resultado" aria-live="polite"></p>
+    <p class="error" aria-live="polite"></p>
+  </section>
+
+  <script src="static/JavaScript/main.js"></script>
+</body>
+</html>
