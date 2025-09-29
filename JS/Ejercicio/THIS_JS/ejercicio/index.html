@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/CSS/style.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <div class="container">
+        <header class="encabezado">
+            <h1 class="titulo">Dojonary</h1>
+            <input type="text" class="buscador" placeholder="Search...">
+            <button onclick="Login(this)" class="boton">Login</button>
+        </header>
+        <!--contenido-->
+        <main>
+            <section class="izquierda">
+                <div class="target">
+                    <div class="contentTarget">
+                        <h1>ninja</h1>
+                        <p>noun <br>
+                        plural: ninjas</p>
+                        <button id="likeBtn" class="botonLikes">13 likes</button>
+                    </div>
+                    <div class="secundaryContentTarget">    
+                        <div class="texto">
+                            <p class="info">A practitioner skilled in the Japanese art of ninjutsu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="target">
+                    <div class="contentTarget">
+                        <h1>ninja</h1>
+                        <p>noun <br>
+                        plural: ninjas</p>
+                        <button id="likeBtn" class="botonLikes">13 likes</button>
+                    </div>
+                    <div class="secundaryContentTarget">
+                        <div class="texto">
+                            <p class="info">A practitioner skilled in the Japanese art of ninjutsu</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="derecha">
+                <div class="targetDer">
+                    <h2>Dojonary is defined by YOU</h2>
+                    <button onclick="esconder(this)" class="add">Add Definition</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="static/JS/script.js"></script>
+</body>
+</html>

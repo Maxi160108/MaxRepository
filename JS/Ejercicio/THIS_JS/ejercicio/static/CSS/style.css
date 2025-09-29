@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Encabezado*/
+
+.container{
+    max-width: 1200px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+header{
+    font-family: cursive;
+    background-color: #a3a3a3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.boton{
+    display: flex;
+    padding: 10px 20px;
+    background-color: #3012db;
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 1px;
+    cursor: pointer;
+    height: 5vh;
+    width: 10vh;
+    box-shadow: 0.5vh 0.5vh rgb(0, 0, 0);
+    font-family: cursive;
+    font-size: 2vh;
+    align-items: center;
+    justify-content: center;
+}
+.boton:hover{
+    background-color: #3a3de0;
+    transition: 0.3s;
+}
+
+.buscador{
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 1px;
+    width: 45%;
+    font-size: 2vh;
+    font-family: cursive;
+}
+.buscador:focus{
+    border-color: #333;
+    outline: none;
+}
+.titulo{
+    font-size:5vh;
+    color: #333;
+}
+
+/*contenidos/targetas*/
+
+main{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    background-color: #e3e3e3;
+}
+
+/*izquierda*/
+
+.izquierda{
+    flex: 2;
+    width: 50%;
+    height: 100%;
+    background-color: #c3c3c3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Tarjetas*/
+
+.target{
+    outline: rgb(0, 0, 0) solid 4px;
+    display: flex;
+    flex-direction: row;
+    margin: 3vh;
+    border-radius: 1px;
+}
+
+/*contenido de tarjetas*/
+
+h1, p{
+    font-family: cursive;
+}
+
+.botonLikes{
+    background-color: rgb(255,217,102);
+    display: flex;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 1px;
+    cursor: pointer;
+    height: 6vh;
+    width: 16vh;
+    box-shadow: 0.5vh 0.5vh rgb(0, 0, 0);
+    font-family: cursive;
+    font-size: 2.5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentTarget{
+    margin: 1vh;
+    gap: 2vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.secundaryContentTarget{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.texto{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 5vh;
+}
+
+.info{
+    font-size: larger;
+}
+
+/*derecha*/
+
+.derecha{
+    outline: red solid 2px;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+
+/*tarjeta de derecha*/
+
+.targetDer{
+    align-items: star;
+    outline: rgb(0, 0, 0) solid 4px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+    margin: 3vh;
+    padding: 2.5vh;
+    gap: 2vh;
+    align-items: center;
+}
+
+/*Contenido*/
+
+h2{
+    font-family: cursive;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.add{
+    display: flex;
+    padding: 10px 20px;
+    background-color: rgb(147,196,125);
+    border: 2px solid #000000;
+    border-radius: 1px;
+    cursor: pointer;
+    height: 7vh;
+    width: 30vh;
+    box-shadow: 0.5vh 0.5vh rgb(0, 0, 0);
+    font-family: cursive;
+    font-size: 3vh;
+    align-items: center;
+    justify-content: center;
+}
