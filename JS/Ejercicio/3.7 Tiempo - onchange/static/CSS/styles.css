@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* ===== BARRA SUPERIOR ===== */
+.banner {
+    background-color: #9FC5F8;
+    color: white;
+    padding: 15px 20px;
+}
+
+.content-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.content-banner h1 {
+    font-size: 1.8rem;
+}
+
+.banner ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.banner a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.banner a:hover {
+    text-decoration: underline;
+}
+
+/* ===== ENCABEZADO CIUDAD ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header h2 {
+    font-size: 2rem;
+}
+
+.selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#mySelect {
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* ===== TARJETAS CLIMA ===== */
+.weather-forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 20px;
+    border-radius: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    height: 50vh;
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+}
+
+.weather-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.weather-card img {
+    width: 90px;
+    height: 90px;
+    margin: 10px 0;
+    border-radius: 50%;
+}
+
+.weather-card p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.temperatures {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.temp-high {
+    color: #e74c3c;
+}
+
+.temp-low {
+    color: #3498db;
+}
+
+/* ===== COOKIE BANNER ===== */
+.cookie-banner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 20px;
+    margin-top: 30px;
+    border: 4px solid black;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-banner img {
+    width: 50px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.cookie-text {
+    flex: 1 1 250px;
+}
+
+.cookie-banner h4 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.cookie-banner p {
+    font-size: 0.9rem;
+}
+
+.cookie-banner a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.cookie-banner button {
+    background-color: #a4c8fa;
+    border: 2px solid black;
+    padding: 8px 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 black;
+    transition: 0.2s ease;
+}
+
+.cookie-banner button:hover {
+    background-color: #6d9ada;
+}
+
+.cookie-banner button:active {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}
+
+/* ======= MEDIA QUERIES ======= */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 992px) {
+    .content-banner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .weather-card img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .content-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner ul {
+        gap: 10px;
+    }
+
+    .weather-card {
+        padding: 15px;
+    }
+
+    .weather-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .weather-card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cookie-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cookie-banner button {
+        width: 100%;
+    }
+}
